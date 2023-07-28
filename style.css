@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s;
+}
+.navbar{
+    width: 100%;
+}
+.navbar nav {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffff;
+    padding: 10px 100px;
+    display: grid;
+    grid-template-columns: auto 2fr auto;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: 69px;
+}
+
+.navbar .links ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .links ul li {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.navbar .links ul li a {
+    font-size: .930rem;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: .75px;
+    font-weight: 800;
+    color: rgb(91, 86, 86);
+}
+
+.links {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.humburger_menu {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    display: none;
+}
+.humburger_menu span ion-icon{
+    font-size: 2.5rem;
+}
+.action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    color: #ffff;
+    padding: 8px 8px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    background-color: #348cea;
+}
+
+.btn:hover {
+    background-color: #0062cc;
+}
+.container{
+    width: 70%;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.right{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.right video{
+    width: 100%;
+    height: auto;
+}
+.left h4{
+    font-size: 2.3rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+.left h1{
+    color: rgba(24,147,247,1);
+    font-size: 3.6rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+}
+.left h3{
+    font-weight: bold;
+    color: #1892F7;
+    font-size: 18px;
+    line-height:2;
+}
+.issuers img{
+    height: auto;
+    width: 355px;
+    margin: 10px 0;
+}
+.desc p{
+    font-size: 18px;
+    color: grey;
+    margin-bottom: 0;
+    margin: 10px 0;
+}
+.apply img{
+    height: 40px;
+    margin: 10px 0;
+}
+
+.fee{
+    background-color: black;
+    color: #ffff;
+    text-align: center;
+    padding: 50px 0;
+}
+.fee .heading h1{
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 50px 0;
+    background: linear-gradient(90deg, rgb(7, 79, 181) 0%, rgb(13, 112, 198) 35%, rgba(1,139,72,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+}
+.fee .rest h3{
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.footer{
+    width: 100%;
+    background-color: #111111;
+    padding: 80px 100px;
+    color: #fff;
+    display: grid;
+    gap: 50px; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+}
+.footer h2{
+    margin: 12px 0;
+}
+.footer ul li a{
+    color: #fff;
+}
+.footer ul li{
+    margin: 10px 0;
+}
+.footer .columns{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer .Newsletter{
+    display: flex;
+    flex-direction:column;
+}
+.footer .Newsletter input{
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+.footer .Newsletter .btn{
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}
+@media screen and (max-width:1200px){
+    .navbar nav {
+        width: 100%;
+    }
+}
+@media screen and (max-width:950px){
+    .navbar .links ul {
+        display: none;
+    }
+    .humburger_menu {
+        display: block;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .fee .heading h1{
+        font-size: 3rem;
+    }
+    .fee .rest h3{
+        font-size: 2rem;
+    }
+}
